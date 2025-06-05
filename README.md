@@ -1,12 +1,12 @@
 Requisitos Previos para usar la aplicación.
-    • Antes de comenzar, asegúrate de tener instalados en tu sistema:
+    Antes de comenzar, asegúrate de tener instalados en tu sistema:
         ◦ Docker 
         ◦ Docker Compose 
         ◦ Git 
 Instalación y Despliegue
-    1. Clonar el repositorio.
+     Clonar el repositorio.
         ◦ Ejecuta el siguiente comando para clonar el proyecto:
-    2. Levantar los contenedores.
+     Levantar los contenedores.
         ◦ Para iniciar los servicios en segundo plano, ejecuta:
           docker-compose up -d
           
