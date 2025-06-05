@@ -1,0 +1,232 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    display: flex; /* Usa flexbox para organizar los elementos principales */
+    flex-direction: column; /* Los elementos se apilan en columna */
+    align-items: stretch; /* Los elementos ocupan todo el ancho */
+    min-height: 100vh; /* Altura mínima igual al 100% del alto de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+    background-color: #b2daf1; /* Color de fondo celeste claro */
+}
+
+/* Estilos para el banner principal */
+.banner {
+    background-image: url('../images/banner.png'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: cover; /* Ajustar imagen para cubrir el contenedor */
+    height: 35vh; /* Altura del banner como 35% del viewport */
+    border: 2px solid black; /* Borde negro alrededor del banner */
+    display: flex; /* Usar flexbox para disposición interna */
+    flex-direction: column; /* Colocar hijos en columna */
+    justify-content: center; /* Centrar hijos verticalmente */
+    align-items: center; /* Centrar hijos horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto e imágenes dentro del banner */
+}
+
+/* Contenedor del logo dentro del banner */
+.logo {
+    z-index: 10; /* Posiciona por encima del fondo */
+    margin-bottom: 20px; /* Espacio inferior respecto a botones */
+}
+
+/* Imagen del logo */
+.logo img {
+    max-width: 50%; /* Máximo ancho al 50% del contenedor */
+    height: auto; /* Mantiene proporciones */
+    display: block; /* Comportamiento de bloque para centrado */
+    margin: 0 auto; /* Centrado horizontal automático */
+}
+
+/* Contenedor de los botones del menú */
+.btnmenu {
+    z-index: 10; /* Encima de otros elementos */
+    display: flex; /* Botones en línea */
+    gap: 10px; /* Espacio entre botones */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Botones dentro del menú */
+.btnmenu button {
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño de fuente estándar */
+}
+
+/* Estilos del formulario de login/conexión */
+.formConnect {
+    text-align: center; /* Centrar texto y campos */
+    padding: 20px; /* Espacio interno */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px auto; /* Margen arriba/abajo y centrado horizontal */
+    max-width: 50%; /* Ancho máximo */
+    width: 100%; /* Ocupar todo el ancho disponible hasta 50% */
+}
+
+/* Estilo general para todos los botones */
+button {
+    background-color: #e3b34a; /* color de fondo*/
+    color: rgb(0, 0, 0); /* Texto negro */
+    font-weight: bold; /* Texto en negrita */
+    border: none; /* Sin bordes por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Puntero tipo "mano" al pasar */
+}
+
+/* Efecto hover para todos los botones */
+button:hover {
+    background-color: rgb(231, 203, 43); /* Color de fondo amarillo */
+    color: black; /* Texto negro */
+}
+
+/* Contenedor principal de contenido */
+#contenedor-principal {
+    padding: 20px; /* Espacio interior */
+    margin-left: 20px; /* Margen lateral izquierdo */
+    margin-right: 20px; /* Margen lateral derecho */
+    text-align: center; /* Centrado del contenido */
+}
+
+/* Estilo para cada botón de colección */
+.coleccion-boton {
+    background-color: #e3b34a; /* Color de fondo base */
+    color: #333; /* Texto gris  */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px 15px; /* Espaciado interno */
+    margin-right: 10px; /* Espacio derecho entre botones */
+    margin-bottom: 10px; /* Espacio inferior */
+    cursor: pointer; /* Mano al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 400px; /* Ancho fijo */
+    height: 200px; /* Altura fija */
+    font-size: 50px; /* Texto grande */
+    transition: background-color 0.3s ease; /* Transición suave */
+    background-image: url('../images/button1.png'); /* Fondo personalizado */
+    font-family: 'Slackey', cursive; /* Fuente del texto*/
+}
+
+/* Hover sobre botones de colección */
+.coleccion-boton:hover {
+    background-color: #e2be71; /* Color diferente al pasar el cursor */
+    background-image: url('../images/button2.png'); /* Imagen distinta */
+}
+
+/* Botón para crear nueva colección */
+.crear-nueva-coleccion-boton {
+    background-color: #a0d468; /* Color de fondo */
+    color: #fff; /* Texto blanco */
+    border-color: #8cc152; /* Borde verde  */
+    background-image: url('../images/button3.png'); /* Fondo personalizado */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Mano al pasar */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 400px; /* Ancho fijo */
+    height: 200px; /* Altura fija */
+    font-size: 30px; /* Texto grande */
+    text-align: center; /* Texto centrado */
+    margin-right: 10px; /* Espacio derecho */
+    margin-bottom: 10px; /* Espacio inferior */
+    font-family: 'revie', cursive; /* Fuente personalizada */
+}
+
+/* Hover sobre el botón de nueva colección */
+.crear-nueva-coleccion-boton:hover {
+    background-color: #8cc152; /* Color de fondo */
+    background-image: url('../images/button4.png'); /* Fondo alternativo */
+}
+
+/* Edita h2 */
+h2 {
+    margin-left: auto; /* Margen derecho*/
+    margin-right: auto; /* Margen izquierdo*/
+    display: block; /* Se comporta como bloque */
+}
+
+/* Formulario para crear nueva colección */
+.form-nueva-coleccion {
+    text-align: center; /* Centra el contenido de texto */
+    margin-left: auto;   /* Espaciado derecho */
+    margin-right: auto;  /* Espaciado izquierdo. */
+    display: block;      /* Asegura que el formulario se comporte como un bloque. */
+    max-width: 600px;    /* Establece un ancho máximo para el formulario, */
+    padding: 20px;       /* Añade 20 píxeles de espacio interno alrededor del contenido del formulario. */
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ddd; /* Añade un borde sólido . */
+    border-radius: 8px;  /* Redondea las esquinas del formulario  */
+    margin-top: 20px;    /* Añade un margen de 20 píxeles en el top. */
+}
+
+/* Formulario para añadir Funkos */
+.addfunko {
+    text-align: center;      /* Centra el contenido */
+    padding: 20px;           /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border: 1px solid #ddd;  /* Borde gris claro */
+    border-radius: 8px;      /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px;        /* Ancho máximo */
+    width: 90%;              /* Ancho adaptable */
+    margin: 20px auto;       /* Margen vertical y centrado horizontal */
+}
+
+/* Campos dentro del formulario de añadir Funkos */
+.addfunko label,
+.addfunko input,
+.addfunko button {
+    display: block;          /* Cada campo en su propia línea */
+    margin: 10px auto;       /* Margen vertical y centrado */
+    width: 80%;              /* Ancho relativo */
+    box-sizing: border-box;  /* Incluye padding/borde en el ancho */
+}
+
+/* Botón específico de añadir Funko */
+.addfunko button {
+    background-color: #a0d468; /* Color de fondo */
+    color: #020202;          /* Texto negro */
+    border: none;            /* Sin borde */
+    border-radius: 5px;      /* Bordes redondeados */
+    padding: 10px 15px;      /* Espaciado interno */
+    cursor: pointer;         /* Cursor puntero */
+    font-weight: bold;       /* Texto negrita */
+}
+
+/* Hover para el botón de añadir Funko */
+.addfunko button:hover {
+    background-color: #8cc152; /* Color de fondo */
+}
+
+/* Botón para ir al registro */
+.ir_registro {
+    background-color: #5cb85c; /* Color de fondo*/
+    color: white;            /* Texto blanco */
+    padding: 10px 15px;      /* Espaciado interno */
+    border: none;            /* Sin borde */
+    border-radius: 5px;      /* Bordes redondeados */
+    cursor: pointer;         /* Cursor puntero */
+    font-size: 1em;          /* Tamaño de letra estándar */
+    margin-right: 10px;      /* Margen derecho */
+}
+
+/* Hover para botón de registro */
+.ir_registro:hover {
+    background-color: #4cae4c; /* Color de fondo */
+}
+
+/* Contenedor para los botones de colecciones */
+#contenedor-botones-colecciones {
+    display: flex;           /* Flexbox */
+    flex-wrap: wrap;         /* Permite saltos de línea */
+    gap: 20px;               /* Espacio entre botones */
+    justify-content: center; /* Centrado horizontal */
+    padding: 20px;           /* Espacio interno */
+}
+
+/* Mensaje cuando no hay colecciones */
+.mensaje-sin-colecciones {
+    text-align: center;      /* Texto centrado */
+    width: 100%;             /* Ocupa todo el ancho */
+    font-weight: bold;       /* Texto negrita */
+    color: #e20c0c;          /* Color rojo */
+    margin-top: 15px;        /* Margen superior */
+    font-size: 18px;         /* Tamaño de letra */
+}

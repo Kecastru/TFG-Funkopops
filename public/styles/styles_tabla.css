@@ -1,0 +1,64 @@
+/* Contenedor principal de la tabla de Funkos */
+.tabla-funko {
+    margin: 20px auto; /* Márgenes automáticos para centrar la tabla horizontalmente y 20px de margen vertical */
+    max-width: 50%; /* Limita el ancho máximo de la tabla al 50% del ancho de la página */
+    width: 100%; /* Hace que la tabla use todo el ancho disponible dentro del contenedor */
+}
+
+/* Estilo para la  tabla */
+.tabla-funko table {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    margin-bottom: 20px; /* Espacio inferior entre la tabla y otros elementos */
+    font-family: sans-serif; /* Fuente  */
+    border: 2px solid black; /* Borde negro alrededor de toda la tabla */
+}
+
+/* Estilo para las celdas y encabezados */
+.tabla-funko th, .tabla-funko td {
+    border: 1px solid black; /* Borde negro alrededor de cada celda */
+    padding: 8px; /* Espaciado interno en celdas para mayor legibilidad */
+    text-align: left; /* Alinea el contenido a la izquierda */
+    background-color: #fcfcfc; /* Fondo blanco suave para las celdas */
+}
+
+/* Color de fondo específico para las celdas de encabezado */
+.tabla-funko th {
+    background-color: #e3b34a; /* Color para destacar los encabezados */
+}
+
+/* Estilo para las imágenes dentro de las celdas */
+.tabla-funko img {
+    max-width: 100px; /* Limita el ancho máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra bajo la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente en la celda */
+}
+
+/* Estilo para los botones dentro de la tabla */
+.tabla-funko button {
+    background-color: #5cb85c; /* Verde como color de fondo */
+    color: white; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado interno para hacer el botón más grande */
+    border: none; /* Quita el borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+    font-size: 1em; /* Tamaño de fuente */
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+/* Efecto hover para los botones ( */
+.tabla-funko button:hover {
+    background-color: #4cae4c; /* Verde  como efecto visual */
+    color: black; /*  Color del texto negro */
+}
+
+/* Estilo para filas que indican que no hay Funkos */
+.tabla-funko .sin-funkos td {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-style: italic; /* Texto en cursiva */
+    color: #777; /* Color gris del texto*/
+}
+
+
+

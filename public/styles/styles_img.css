@@ -1,0 +1,32 @@
+/* Estilo para el contenedor del modal que muestra la imagen ampliada */
+#imagenModal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en la pantalla  */
+    z-index: 1000; /* Se asegura de que el modal esté por encima de otros elementos */
+    left: 0; /* Alinea el modal al borde izquierdo de la ventana */
+    top: 0; /* Alinea el modal al borde superior de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    height: 100%; /* Ocupa todo el alto de la ventana */
+    overflow: auto; /* Habilita scroll si el contenido es más grande que el modal */
+    background-color: rgba(0,0,0,0.8); /* Fondo negro semi-transparente */
+}
+
+/* Estilo para la imagen dentro del modal */
+#imagenModal img {
+    display: block; /* Hace que la imagen se comporte como un bloque  */
+    margin: 60px auto; /* Centra la imagen horizontalmente y añade espacio superior */
+    max-width: 90%; /* Limita el ancho máximo al 90% del ancho de la pantalla */
+    max-height: 80%; /* Limita el alto máximo al 80% del alto de la pantalla */
+}
+
+/* Estilo para el botón (X) de cerrar el modal */
+#cerrarModal {
+    position: absolute; /* Posicionamiento absoluto dentro del modal */
+    top: 20px; /* Se posiciona 20px desde la parte superior */
+    right: 40px; /* Se posiciona 40px desde la parte derecha */
+    font-size: 40px; /* Tamaño de fuente grande para que sea visible */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color blanco */
+    cursor: pointer; /* Cambia el cursor a "puntero" al pasar el ratón */
+}
+
