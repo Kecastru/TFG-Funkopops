@@ -1,7 +1,7 @@
 <?php
 function obtenerColeccionesOtrosUsuarios($usuarioActual, $conn) {
     // Consulta SQL para obtener las colecciones de todos los usuarios excepto el actual.
-    // Se selecciona el id de la colección, el nombre de la colección y el nombre de usuario del dueño.
+    // Se selecciona el id de la colección, el nombre de la colección y y el nombre del usuario (dueño de la colección)
     $sql = "SELECT 
                 c.idcolecciones, 
                 c.nombre AS nombre_coleccion, 
