@@ -57,7 +57,7 @@ fetch('/api.php?action=obtener_colecciones', {
         contenedor.innerHTML = ''; // Limpia el contenido previo
 
         if (data.error) {
-            // Muestra un mensaje de error si existe
+            // Muestra un mensaje de error 
             contenedor.innerHTML = `<p>${data.error}</p>`;
         } else if (data.colecciones && data.colecciones.length > 0) {
             // Crea un botón por cada colección
