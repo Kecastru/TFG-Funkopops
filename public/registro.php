@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     exit();
 }
 
-// Obtiene y limpia el mensaje de registro si existe
+// Obtiene y limpia el mensaje de registro 
 $mensaje = $_SESSION['registro_mensaje'] ?? null;
 unset($_SESSION['registro_mensaje']);
 
