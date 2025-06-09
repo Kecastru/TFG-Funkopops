@@ -164,7 +164,7 @@ function eliminarFormulario() {
     if (formulario) formulario.remove();
 }
 
-// Crea el botón "Crear nueva colección" si no existe
+// Crea el botón "Crear nueva colección"
 function crearBotonNuevaColeccion() {
     const contenedor = document.getElementById('contenedor-botones-colecciones');
     if (contenedor && !document.getElementById('crear-coleccion-btn')) {
