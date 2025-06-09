@@ -77,7 +77,7 @@ $resultFunkos = $stmtFunkos->get_result();
     </div>
 </header>
 
-<!-- Muestra alerta si hay mensaje de registro -->
+<!-- Muestra alerta  -->
 <?php if ($mensajeRegistro): ?>
 <script>
     alert("<?= addslashes($mensajeRegistro) ?>");
