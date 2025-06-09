@@ -36,7 +36,6 @@ function eliminarWish(): array {
             $conn->close();
             return ['success' => true, 'message' => 'Funko eliminado correctamente'];
         } else {
-            // En caso de error al ejecutar
             $stmt->close();
             $conn->close();
             return ['success' => false, 'message' => 'Error al eliminar'];
