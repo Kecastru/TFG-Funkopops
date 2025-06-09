@@ -47,7 +47,7 @@ function añadirFunko() {
     $imagen = file_get_contents($_FILES['imagen']['tmp_name']); // Imagen en binario
     $tipoImagen = $_FILES['imagen']['type'];                    // Tipo de archivo
 
-    // Validación opcional del tipo de imagen permitido
+    // Validación del tipo de imagen permitido
     $tipos_validos = ['image/jpeg', 'image/png', 'image/gif'];
     if (!in_array($tipoImagen, $tipos_validos)) {
         return [
