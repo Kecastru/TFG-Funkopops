@@ -10,7 +10,7 @@ if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
 // Convierte el parámetro 'id' a entero para mayor seguridad
 $idColeccion = intval($_GET['id']);
 
-// Obtiene mensaje de éxito o error almacenado en la sesión, si existe
+// Obtiene mensaje de éxito o error almacenado en la sesión
 $mensaje = $_SESSION['registro_mensaje'] ?? null;
 
 // Elimina el mensaje de la sesión para que no se repita
