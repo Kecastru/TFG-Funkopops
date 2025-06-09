@@ -1,5 +1,5 @@
 <?php
-// Inicia la sesión para gestionar mensajes y datos del usuario
+// Inicia la sesión 
 session_start();
 
 // Incluye conexión a la base de datos
