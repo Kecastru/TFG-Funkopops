@@ -35,7 +35,7 @@ $stmtCol->bind_param("i", $idColeccion);
 $stmtCol->execute();
 $resultCol = $stmtCol->get_result();
 
-// Si no se encuentra la colección, mostrar error
+// Si no se encuentra la colección, muestra un error
 if ($resultCol->num_rows === 0) {
     die('Colección no encontrada.');
 }
