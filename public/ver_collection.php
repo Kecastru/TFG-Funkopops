@@ -2,7 +2,7 @@
 // Inicia sesión para mantener los datos del usuario
 session_start();
 
-// Captura mensaje de registro (si existe) y lo elimina para que no se repita
+// Captura un mensaje y lo elimina para que no se repita
 $mensajeRegistro = '';
 if (isset($_SESSION['registro_mensaje'])) {
     $mensajeRegistro = $_SESSION['registro_mensaje'];
