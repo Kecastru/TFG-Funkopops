@@ -85,7 +85,7 @@ unset($_SESSION['registro_mensaje']);
 <!-- Scripts -->
 <script src="js/scriptbtn.js"></script>
 
-<!-- Muestra un mensaje emergente si existe uno en la sesión -->
+<!-- Muestra un mensaje emergente -->
 <?php if ($mensaje): ?>
 <script>
     alert("<?php echo htmlspecialchars($mensaje); ?>");
