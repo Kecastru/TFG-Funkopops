@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('tr[data-funko]').forEach(row => {
         const accionCell = row.querySelector('td:last-child'); 
 
-        // Obtiene los botones esperados si existen
+        // Obtiene los botones esperados 
         const botones = ['btn-editar-funko', 'btn-guardar-funko', 'btn-cancelar-funko', 'btn-eliminar-funko']
             .map(clase => accionCell.querySelector(`.${clase}`)) // Busca cada botón
             .filter(btn => btn !== null); // Elimina nulos si no existe alguno
