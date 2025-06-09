@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <button type="button" id="btnRegistrarse">Registrarse</button>
     </form>
 
-    <!-- Muestra un mensaje en alerta si la variable $mensaje contiene algo -->
+    <!-- Muestra un mensaje en alerta  -->
     <?php if ($mensaje): ?>
         <script>
             alert("<?php echo $mensaje; ?>");
