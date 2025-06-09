@@ -124,7 +124,7 @@ unset($_SESSION['registro_mensaje']);
 <!-- Scripts -->
 <script src="js/scriptbtn.js"></script>
 <script>
-    // Mostrar mensaje de registro 
+    // Muestra mensaje de registro 
     <?php if ($mensaje): ?>
         alert("<?php echo $mensaje; ?>");
     <?php endif; ?>
