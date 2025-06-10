@@ -41,7 +41,7 @@ if (isset($_SESSION['username_id'])) {
 
 <!-- Contenedor principal donde se mostrarán las diferentes secciones -->
 <div id="contenedor-principal">
-    <h2>Hola</h2>
+    <h2>Hola,bienvenido a Funkopop Collection¡</h2>
 </div>
 
 <!-- Pasa el ID del usuario a JavaScript para uso en scripts -->
